@@ -7,9 +7,6 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class HeaderComponent {
   collapsed = true;
-  @Output() selectedPage = new EventEmitter<string>()
 
-  onSelect(page: string) {
-    this.selectedPage.emit(page)
-  }
+ 
 }
