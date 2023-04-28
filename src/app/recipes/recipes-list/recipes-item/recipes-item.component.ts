@@ -9,6 +9,7 @@ import { RecipeService } from '../../recipe.service';
 })
 export class RecipesItemComponent {
   @Input() recipe: Recipe;
+  @Input() idx: number;
 
   constructor(private recipeService: RecipeService) { }
   
