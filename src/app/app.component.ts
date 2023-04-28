@@ -7,9 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-basics';
-  loadedPage = 'recipes'
-
-  onSelectPage(page: string) {
-    this.loadedPage = page;
-  }
 }

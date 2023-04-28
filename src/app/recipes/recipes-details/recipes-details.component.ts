@@ -30,8 +30,8 @@ export class RecipesDetailsComponent implements OnInit {
   }
 
   onEditRecipe(): void {
-    // this.router.navigate(['edit'], {relativeTo: this.route})
-    this.router.navigate(['../', [this.id], 'edit'], { relativeTo: this.route })
+    // this.router.navigate(['../', [this.id], 'edit'], { relativeTo: this.route })
+    this.router.navigate(['edit'], {relativeTo: this.route})
   }
 
   onAddToShoppingList(): void {
