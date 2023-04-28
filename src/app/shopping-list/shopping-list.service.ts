@@ -34,6 +34,11 @@ export class ShoppingListService {
     this.ingChanged.next(this.ingredients.slice())
   }
 
+  deleteIngredient(idx: number): void {
+    this.ingredients.splice(idx, 1)
+    this.ingChanged.next(this.ingredients.slice())
+  }
+
   addIngredients(ingredients: Ingredient[]): void {
     this.ingredients.push(...ingredients)
     this.ingChanged.next(this.ingredients.slice())
